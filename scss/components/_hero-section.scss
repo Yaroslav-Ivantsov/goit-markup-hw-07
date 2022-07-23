@@ -39,10 +39,11 @@
     letter-spacing: 0.06em;
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    &:hover,
+    &:focus {
+        background-color: var(--bg-buttom-colar);
+    }
+
 }
 
 
-.main-button:hover,
-.main-button:focus {
-    background-color: var(--bg-buttom-colar);
-}

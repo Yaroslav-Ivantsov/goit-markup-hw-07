@@ -20,15 +20,16 @@
     padding: 12px;
     fill: var(--soc-main-colar);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-radius: 50%;
+        color: var(--white-text-color);
+        background-color: var(--acent-text-color);
+        fill: var(--white-text-color);
+    }
 }
 
-.social__link:hover,
-.social__link:focus {
-    border-radius: 50%;
-    color: var(--white-text-color);
-    background-color: var(--acent-text-color);
-    fill: var(--white-text-color);
-}
 
 .social__icon {
     width: 20px;

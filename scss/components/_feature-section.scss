@@ -1,36 +1,20 @@
 .feature {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include pading-section;
 }
 
 .feature__wrap {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    @include container;
 }
 
 
 
 .feature__title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    text-transform: none;
+    @include title-modification;
     display: none;
 }
 
 .feature__list {
-    justify-content: space-between;
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+    @include list-modification;
 }
 
 .feature__item:not(:last-child) {
@@ -38,10 +22,8 @@
 }
 
 .feature__icon {
-    display: flex;
+    @include flex-centred;
     height: 120px;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 30px;
     background-color: var(--primery-background-color);
 }

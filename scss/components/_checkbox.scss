@@ -9,8 +9,6 @@
     color: var(--secondary-text-colar);
 }
 
-
-
 .checkbox__input--visually-hidden {
     appearance: none;
     position: absolute;
@@ -55,7 +53,6 @@
 .checkbox__input:checked~.checkbox__check-icon {
     opacity: 0;
 }
-
 
 
 .checkbox__input:checked~.checkbox__active-icon {

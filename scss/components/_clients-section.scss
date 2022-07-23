@@ -1,25 +1,13 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include pading-section;
 }
 
 .clients__wrap {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    @include container;
 }
 
 .clients__title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    text-transform: none;
+    @include title-modification;
 }
 
 .companies {
@@ -34,24 +22,21 @@
 
 
 .companies__link {
-    display: flex;
+    @include flex-centred;
     width: 170px;
     height: 92px;
-    align-items: center;
-    justify-content: center;
     fill: var(--soc-main-colar);
     border: 1px solid var(--soc-main-colar);
     border-radius: 4px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--acent-text-color);
+        border: 1px solid var(--acent-text-color);
+    }
 }
 
-
-.companies__link:hover,
-.companies__link:focus {
-    fill: var(--acent-text-color);
-    border: 1px solid var(--acent-text-color);
-
-}
 
 .companies__logo {
     width: 106px;
